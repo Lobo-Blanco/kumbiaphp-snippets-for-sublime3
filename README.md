@@ -37,4 +37,4 @@ Actualización para mejorar cuestiones de usabilidad y legibilidad en controller
 <p>Se puede instalar la carpeta KumbiaPHP en Data\Packages\User para tenerlos disponibles</p>
 
 <hr/>
-<p>Por defecto estos snippets están activos siempre, pero si se desa que estén solo activos al editar un fichero PHP, descomentad la línea <scope> en cada uno de los archivos</p>
+<p>Por defecto estos snippets están activos siempre, pero si se desa que estén solo activos al editar un fichero PHP, descomentad la línea &lt;scope&gt; en cada uno de los archivos</p>
