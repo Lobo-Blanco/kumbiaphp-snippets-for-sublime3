@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->validates_email_in('${1:campodelmodelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>vei</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>validate Email In</description>
+</snippet>

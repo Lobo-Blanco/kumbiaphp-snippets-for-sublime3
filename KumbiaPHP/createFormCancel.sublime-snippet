@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		echo Html::linkAction(${1:accion}, ${2:texto}, array('class'=>'btn ${3:extra}'));$4
+	    ]]>
+	</content>
+  <tabTrigger>kcfc</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>create Form Cancel</description>
+</snippet>

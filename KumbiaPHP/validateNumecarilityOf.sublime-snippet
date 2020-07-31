@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->validates_numericality_of('${1:campodelmodelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>vno</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>validate Numecarility Of</description>
+</snippet>

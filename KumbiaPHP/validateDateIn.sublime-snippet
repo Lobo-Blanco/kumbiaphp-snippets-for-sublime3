@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->validates_date_in('${1:campodelmodelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>vdi</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>validate Date In</description>
+</snippet>

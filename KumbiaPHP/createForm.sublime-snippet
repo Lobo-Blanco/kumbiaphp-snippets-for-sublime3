@@ -1,0 +1,12 @@
+<snippet>
+	<content>
+		<![CDATA[
+		echo Form::open();
+        	$1
+      	echo Form::close();
+	    ]]>
+	</content>
+  <tabTrigger>kfc</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>create Form</description>
+</snippet>

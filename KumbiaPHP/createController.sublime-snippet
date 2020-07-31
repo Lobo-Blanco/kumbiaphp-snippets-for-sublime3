@@ -1,0 +1,54 @@
+<snippet>
+	<content>
+		<![CDATA[
+      Load::models("${1:model_name}"); ${4:controlador_creado}
+      class ${2:controllername}Controller extends AppController {
+        public function index() {
+          \$this->${3:variable_de_modelo}s = Load::model("${1:model_name}")->find();
+        }
+
+        public function show(\$id) {
+          \$this->${3:variable_de_modelo} = Load::model("${1:model_name}")->find_by_id((int)\$id);
+        }
+
+        public function create() {
+          if (Input::hasPost("$3")) {
+            ${3:variable_de_modelo} =  Load::model("${1:model_name}");
+            if (\$${3:variable_de_modelo}->create(Input::post("${3:variable_de_modelo}"))) {
+              Flash::valid("Elemento creado con éxito");
+              return Redirect::to(); //al index de forma predeterminada
+            }
+          }
+        }
+
+        public function edit(\$id) {
+          if (Input::hasPost("${3:variable_de_modelo}")) {
+            \$${3:variable_de_modelo} =  Load::model("${1:model_name}")->find_by_id((int)\$id);
+            if (\$${3:variable_de_modelo}->update(Input::post("$3"))) {
+              Flash::valid("Elemento actualizado con éxito");
+              return Redirect::to(); //al index de forma predeterminada
+            } else {
+              Flash::error("fue imposible actualizar el elemento");
+            }
+          }
+          \$this->${3:variable_de_modelo} = Load::model("${1:model_name}")->find_by_id((int)\$id);
+        }
+
+        public function destroy(\$id) {
+          \$${3:variable_de_modelo} =  Load::model("${1:model_name}")->find_by_id((int)\$id);
+          if (\$${3:variable_de_modelo}->delete()){
+            Flash::valid("Elemento eliminado con éxito");
+          } else {
+            Flash::error("fue imposible eliminar el elemento");
+          }
+          return Redirect::to();
+        }
+      $0
+      }
+    ]]>
+	</content>
+  <tabTrigger>kcc</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>Create Controller</description>
+</snippet>
+

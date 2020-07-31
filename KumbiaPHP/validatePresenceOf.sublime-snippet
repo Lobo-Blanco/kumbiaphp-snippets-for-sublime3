@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->validates_presence_of('${1:campodelmodelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>vpo</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>Validate Presence Of</description>
+</snippet>

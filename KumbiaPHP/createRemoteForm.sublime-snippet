@@ -1,0 +1,14 @@
+<snippet>
+	<content>
+		<![CDATA[
+		echo Ajax::form("${1:divToRefresh}");
+        	$2
+        	echo Form::submit('${2:texto}', array('class'=>'btn ${3:extra}'));$3
+        	echo Html::linkAction(${4:accion}, ${5:texto}, array('class'=>'btn ${6:extra}'));$7
+      	echo Form::close();
+	    ]]>
+	</content>
+  <tabTrigger>kcrf</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>create Remote Form</description>
+</snippet>

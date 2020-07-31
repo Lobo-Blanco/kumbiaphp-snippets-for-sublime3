@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->has_many('${1:modelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>hm</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>has_many</description>
+</snippet>

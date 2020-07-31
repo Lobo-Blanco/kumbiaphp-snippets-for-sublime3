@@ -1,0 +1,15 @@
+<snippet>
+	<content>
+		<![CDATA[
+        class ${1:modelname} extends ActiveRecord
+        {
+          public function initialize() {
+            $2
+          }
+        }
+	    ]]>
+	</content>
+  <tabTrigger>kcm</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>Create Model</description>
+</snippet>

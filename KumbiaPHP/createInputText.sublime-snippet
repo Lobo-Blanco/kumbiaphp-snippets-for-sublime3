@@ -1,0 +1,11 @@
+<snippet>
+	<content>
+		<![CDATA[
+		echo Form::label('${1:textoetiqueta}', '${2:campoinput}', array('class'=>'form-label'));
+		echo Form::text('${2:campoinput}', array('class'=>'form-control'));$3
+	    ]]>
+	</content>
+  <tabTrigger>kcit</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>create Input Text</description>
+</snippet>

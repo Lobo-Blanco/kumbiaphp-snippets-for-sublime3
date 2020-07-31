@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[
+		$this->belongs_to('${1:modelo}');$2
+	    ]]>
+	</content>
+  <tabTrigger>bt</tabTrigger>
+  <!-- <scope>source.php</scope> -->
+  <description>belongs_to</description>
+</snippet>
