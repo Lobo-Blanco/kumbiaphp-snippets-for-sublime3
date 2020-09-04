@@ -3,11 +3,11 @@
 		<![CDATA[
       class ${2:controllername}Controller extends AppController {
         public function index() {
-          \$this->${3:model_name} = (new ${1:model_name})->get${1:model_name}(\$page);;
+          \$this->list${1:model_name} = (new ${1:model_name})->get${1:model_name}(\$page);
         }
 
         public function show(\$id) {
-          \$this->${3:variable_de_modelo} = (new ${1:model_name})->find_by_id((int) \$id);;
+          \$this->${3:variable_de_modelo}s = (new ${1:model_name})->find_by_id((int) \$id);
         }
 
         public function create() {
@@ -34,9 +34,9 @@
         }
 
         public function edit(\$id) {
-          \$${3:variable_de_modelo} = new ${1:model_name}();"
+          \$${3:variable_de_modelo} = new ${1:model_name}();
 
-          //se verifica si se ha enviado el formulario (submit)"
+          //se verifica si se ha enviado el formulario (submit)
           if (Input::hasPost("${3:variable_de_modelo}s")) {
             if (\$${3:variable_de_modelo}->update(Input::post("${3:variable_de_modelo}s"))) {
               Flash::valid("Elemento actualizado con éxito");
@@ -49,7 +49,7 @@
           //Aplicando la autocarga de objeto, para comenzar la edición
           //Si en la vista usamos \$${3:variable_de_modelo}s.nombre, la autocarga buscará una variable llamada \$${3:variable_de_modelo}s
           //para apoyar los helpers de Form
-          \$this->${3:variable_de_modelo}s = \$${3:variable_de_modelo}->find_by_id((int) \$id);;
+          \$this->${3:variable_de_modelo}s = \$${3:variable_de_modelo}->find_by_id((int) \$id);
         }
 
         public function del(\$id) {
